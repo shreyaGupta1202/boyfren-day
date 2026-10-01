@@ -10,7 +10,7 @@
     <meta name="description" content="A very special Boyfriend's Day itinerary." />
     <title>Welcome to Boyfriend’s Day!</title>
     <script>
-      const RELEASE_VERSION = "2026-10-02-05";
+      const RELEASE_VERSION = "2026-10-02-06";
       try {
         if (localStorage.getItem("boyfriend-day-release") !== RELEASE_VERSION) {
           localStorage.setItem("boyfriend-day-release", RELEASE_VERSION);
@@ -18,7 +18,7 @@
         }
       } catch (_) { /* Storage can be unavailable in private browsing. */ }
     </script>
-    <link rel="stylesheet" href="styles.css?v=2026-10-02-05" />
+    <link rel="stylesheet" href="styles.css?v=2026-10-02-06" />
   </head>
   <body>
     <div class="page-glow" aria-hidden="true"></div>
@@ -46,11 +46,11 @@
       <footer>I love youu, my handsome <span aria-hidden="true">🤍</span></footer>
     </main>
 
-    <script src="script.js?v=2026-10-02-05"></script>
+    <script src="script.js?v=2026-10-02-06"></script>
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("sw.js?v=2026-10-02-05").catch(() => {});
+          navigator.serviceWorker.register("sw.js?v=2026-10-02-06").catch(() => {});
         });
       }
     </script>

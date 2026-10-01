@@ -2,7 +2,8 @@
   TEMPORARY BLUR TEST (set 2 October 2026):
   Restore before the real reveal: EVENT_DATE = "2026-10-03", activity 1 to
   10:00 AM–10:30 AM / 10:00, activity 2 to 11:15 AM–12:30 PM / 11:15,
-  and activity 3 to 1:00 PM–2:00 PM / 13:00.
+  activity 3 to 1:00 PM–2:00 PM / 13:00, and activity 4 to
+  2:00 PM–6:00 PM / 14:00.
 */
 const EVENT_DATE = "2026-10-02";
 const EVENT_TIME_ZONE = "Asia/Kolkata";
@@ -28,7 +29,7 @@ const ITINERARY = [
     map: "https://www.google.com/maps/dir//1+Bar+House+Kitchen+(1BHK),+56,+Raj+villa,+5th+cross,+60+Feet+Rd,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560095/@12.9366662,77.6650655,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae158d73e7c9f3:0xa5827f4ece2bf43!2m2!1d77.6211321!2d12.9365488?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
   },
   {
-    time: "2:00 PM–6:00 PM", start: "14:00", place: "Loco Bear",
+    time: "6:32 AM–10:32 AM", start: "06:32", place: "Loco Bear",
     description: "Girl, you ain't beating me in bowling and go karting.",
     unlockedText: "Adventure unlocked",
     map: "https://www.google.com/maps/dir//Loco+Bear+-+The+Ultimate+Entertainment+Hub,+Jakkasandra+Extension,+1st+Block+Koramangala,+Koramangala,+Bengaluru,+Karnataka+560034/@12.9366662,77.6650655,15z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3bae153659ea5543:0x67f16fe1c49ebfe5!2m2!1d77.6402395!2d12.9273936?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
