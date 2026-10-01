@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#8f0c28" />
+    <meta name="description" content="A very special Boyfriend's Day itinerary." />
+    <title>Welcome to Boyfriend’s Day!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+
+    <main class="site-shell" id="mainContent">
+      <img class="sticker sticker-boyfriend" src="images/boyfriend_sticker.png" alt="" aria-hidden="true" />
+      <img class="sticker sticker-blue" src="images/blue_flower.png" alt="" aria-hidden="true" />
+      <img class="sticker sticker-white" src="images/white_flower.png" alt="" aria-hidden="true" />
+      <img class="sticker sticker-lavender" src="images/lavender_flower.png" alt="" aria-hidden="true" />
+
+      <header class="hero">
+        <p class="eyebrow">Made with all my love</p>
+        <h1>Welcome to<br />Boyfriend’s Day!</h1>
+        <p class="hero-note">Your day has been planned with a few little surprises along the way.</p>
+      </header>
+
+      <section class="itinerary" aria-labelledby="itineraryTitle">
+        <div class="section-heading">
+          <p class="eyebrow">A day for you</p>
+          <h2 id="itineraryTitle">Our itinerary</h2>
+          <p class="timezone-note">All surprise times follow IST (Asia/Kolkata).</p>
+        </div>
+        <div class="timeline" id="itineraryCards" aria-live="polite"></div>
+      </section>
+
+      <footer>I love youu, my handsome <span aria-hidden="true">🤍</span></footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+/* Add the supplied font assets with these exact names when they arrive:
+   images/Handsome.woff2, images/Versailles.woff2 */
+@font-face {
+  font-family: "Handsome";
+  src: url("images/Handsome.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Versailles";
+  src: url("images/Versailles.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --cream: #fff7d6;
+  --soft-yellow: #ffeb99;
+  --coral: #ff924d;
+  --deep-red: #510619;
+  --panel: rgba(79, 2, 25, 0.72);
+  --sans: ui-rounded, "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --script: "Handsome", "Snell Roundhand", "Segoe Script", cursive;
+  --itinerary: "Versailles", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { background: #8f0c28; }
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--cream);
+  font-family: var(--sans);
+  background-color: #8f0c28;
+  background-image: linear-gradient(145deg, rgba(91, 3, 33, 0.4), rgba(230, 65, 80, 0.07)), url("images/bf_bg.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+.page-glow { position: fixed; inset: 0; pointer-events: none; z-index: -1; background: radial-gradient(circle at 80% 10%, rgba(255, 218, 123, 0.18), transparent 31%), radial-gradient(circle at 10% 70%, rgba(255, 146, 77, 0.14), transparent 34%); }
+.site-shell { position: relative; width: min(100%, 620px); min-height: 100svh; margin: 0 auto; padding: calc(26px + env(safe-area-inset-top)) 20px calc(36px + env(safe-area-inset-bottom)); isolation: isolate; }
+.hero { position: relative; z-index: 2; padding: 22px 6px 54px; text-align: center; }
+.eyebrow { margin: 0 0 8px; color: var(--soft-yellow); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.17em; text-transform: uppercase; }
+h1, h2, p { overflow-wrap: anywhere; }
+h1 { margin: 0; font-family: var(--script); font-size: clamp(3rem, 15vw, 5.4rem); font-weight: 400; line-height: 0.86; letter-spacing: -0.035em; background: linear-gradient(90deg, #ffde59, #ff924d); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 3px 0 rgba(81, 6, 25, 0.22)); }
+.hero-note { width: min(100%, 290px); margin: 23px auto 14px; color: rgba(255, 247, 214, 0.91); font-size: 0.9rem; line-height: 1.5; text-shadow: 0 1px 8px rgba(35, 0, 10, 0.8); }
+.section-heading { position: relative; z-index: 2; margin-bottom: 20px; text-align: center; }
+h2 { margin: 0; font-family: var(--script); font-size: 2.55rem; font-weight: 400; line-height: 1; color: var(--cream); text-shadow: 0 2px 12px rgba(57, 0, 17, 0.65); }
+.timezone-note { margin: 10px 0 0; font-size: 0.72rem; color: rgba(255, 247, 214, 0.77); }
+.timeline { position: relative; display: grid; gap: 14px; }
+.timeline::before { content: ""; position: absolute; top: 24px; bottom: 24px; left: 23px; width: 1px; background: linear-gradient(var(--soft-yellow), rgba(255, 235, 153, 0.08)); }
+.itinerary-card { position: relative; z-index: 1; display: grid; grid-template-columns: 48px 1fr; gap: 13px; align-items: stretch; }
+.card-number { display: grid; place-items: center; width: 47px; height: 47px; border: 1px solid rgba(255, 235, 153, 0.68); border-radius: 50%; color: var(--soft-yellow); background: #740c29; box-shadow: 0 0 0 5px rgba(116, 12, 41, 0.66); font-family: var(--itinerary); font-size: 1rem; }
+.card-content { min-width: 0; padding: 17px 15px 15px; border: 1px solid rgba(255, 235, 153, 0.22); border-radius: 19px; background: var(--panel); box-shadow: 0 12px 28px rgba(53, 0, 18, 0.2); backdrop-filter: blur(7px); }
+.card-time { display: block; margin-bottom: 7px; color: var(--soft-yellow); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.09em; }
+.card-details { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 34px; transition: filter 500ms ease, opacity 500ms ease; }
+.place-name { margin: 0; font-family: var(--itinerary); font-size: clamp(1.25rem, 6.5vw, 1.52rem); font-weight: 400; line-height: 1.1; color: var(--cream); }
+.map-link { display: grid; flex: 0 0 auto; place-items: center; width: 46px; height: 46px; border: 1px solid rgba(255, 235, 153, 0.56); border-radius: 50%; color: var(--soft-yellow); font-size: 1.7rem; line-height: 1; text-decoration: none; transition: transform 160ms ease, background 160ms ease; }
+.map-link:active { transform: scale(0.92); background: rgba(255, 235, 153, 0.15); }
+.card-description { margin: 8px 0 0; color: rgba(255, 247, 214, 0.72); font-family: var(--itinerary); font-size: 0.83rem; line-height: 1.35; transition: filter 500ms ease, opacity 500ms ease; }
+.unlock-note { margin: 10px 0 0; color: var(--soft-yellow); font-size: 0.74rem; font-weight: 750; letter-spacing: 0.01em; }
+.is-locked .card-details, .is-locked .card-description { filter: blur(7px); opacity: 0.48; user-select: none; }
+.is-locked .map-link { pointer-events: none; }
+.is-unlocked .unlock-note { color: #fff0b1; }
+.sticker { position: absolute; z-index: 0; pointer-events: none; user-select: none; filter: drop-shadow(0 10px 15px rgba(67, 0, 18, 0.28)); }
+.sticker-boyfriend { top: 164px; right: -30px; width: min(32vw, 168px); transform: rotate(5deg); animation: bob 5s ease-in-out infinite; }
+.sticker-blue { top: 72px; left: -44px; width: min(31vw, 150px); transform: rotate(-20deg); animation: drift 6s ease-in-out infinite; }
+.sticker-white { top: 44%; right: -53px; width: min(31vw, 155px); transform: rotate(18deg); animation: drift 7s 1s ease-in-out infinite reverse; }
+.sticker-lavender { bottom: 7%; left: -49px; width: min(29vw, 145px); transform: rotate(-20deg); animation: bob 6s 0.5s ease-in-out infinite reverse; }
+footer { position: relative; z-index: 1; margin-top: 40px; color: rgba(255, 247, 214, 0.83); text-align: center; font-family: var(--script); font-size: 1.45rem; }
+footer span { color: #ff924d; }
+@keyframes bob { 50% { translate: 0 -11px; } }
+@keyframes drift { 50% { translate: 9px -7px; rotate: 4deg; } }
+@media (min-width: 650px) { .site-shell { padding-left: 30px; padding-right: 30px; } .hero { padding-bottom: 66px; } .sticker-boyfriend { right: -65px; } .sticker-blue { left: -76px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
