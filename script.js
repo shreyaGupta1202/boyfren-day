@@ -1,35 +1,29 @@
-/*
-  TEMPORARY BLUR TEST (set 2 October 2026):
-  Restore before the real reveal: EVENT_DATE = "2026-10-03", activity 1 to
-  10:00 AM–10:30 AM / 10:00, activity 2 to 11:15 AM–12:30 PM / 11:15,
-  activity 3 to 1:00 PM–2:00 PM / 13:00, and activity 4 to
-  2:00 PM–6:00 PM / 14:00.
-*/
-const EVENT_DATE = "2026-10-02";
+/* The event's IST calendar date. */
+const EVENT_DATE = "2026-10-03";
 const EVENT_TIME_ZONE = "Asia/Kolkata";
 
 /* Keep/edit every itinerary item here. Start time uses 24-hour IST time. */
 const ITINERARY = [
   {
-    time: "4:00 AM–4:30 AM", start: "04:00", place: "BB’s Residence",
+    time: "10:00 AM–10:30 AM", start: "10:00", place: "BB’s Residence",
     description: "Present time! And seeing you baby in all her gorgeousness.",
     unlockedText: "Surprise unlocked ✦",
     map: "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIgfCjxJmXAxUAAAAAHQAAAAAQBQ..i&udm&fvr=1&pvq=Cg0vZy8xMWo4azNfZ3hzIhYKEGVtYmFzc3kgcHJpc3RpbmUQAhgD&lqi=ChBlbWJhc3N5IHByaXN0aW5lSJj3_pGisICACFoaEAAQARgAGAEiEGVtYmFzc3kgcHJpc3RpbmU&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3bae1398fd2d8129:0x2d4db826ac1a5586"
   },
   {
-    time: "5:00 AM–6:15 AM", start: "05:00", place: "Escape Room",
+    time: "11:15 AM–12:30 PM", start: "11:15", place: "Escape Room",
     description: "Time to solve a murder mystery together.",
     unlockedText: "Mystery unlocked",
     map: "https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KTvO1NdpFK47MTYgDSzsbAna&daddr=27,+NMR+Building,+1st+floor+Intermediate+Ring+Road,+100+Feet+Rd,+Koramangala,+Bengaluru,+Karnataka+560047"
   },
   {
-    time: "6:25 AM–7:25 AM", start: "06:25", place: "1BHK Restaurant",
+    time: "1:00 PM–2:00 PM", start: "13:00", place: "1BHK Restaurant",
     description: "A table, a meal, and my favourite company.",
     unlockedText: "Surprise unlocked ✦",
     map: "https://www.google.com/maps/dir//1+Bar+House+Kitchen+(1BHK),+56,+Raj+villa,+5th+cross,+60+Feet+Rd,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560095/@12.9366662,77.6650655,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae158d73e7c9f3:0xa5827f4ece2bf43!2m2!1d77.6211321!2d12.9365488?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
   },
   {
-    time: "6:32 AM–10:32 AM", start: "06:32", place: "Loco Bear",
+    time: "2:00 PM–6:00 PM", start: "14:00", place: "Loco Bear",
     description: "Girl, you ain't beating me in bowling and go karting.",
     unlockedText: "Adventure unlocked",
     map: "https://www.google.com/maps/dir//Loco+Bear+-+The+Ultimate+Entertainment+Hub,+Jakkasandra+Extension,+1st+Block+Koramangala,+Koramangala,+Bengaluru,+Karnataka+560034/@12.9366662,77.6650655,15z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3bae153659ea5543:0x67f16fe1c49ebfe5!2m2!1d77.6402395!2d12.9273936?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
